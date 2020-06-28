@@ -44,7 +44,7 @@ import Question from './Question.vue'
     props: ['isdark'],
 
     data: () => ({
-     question_index: 200,
+     question_index: 0,
     }),
     computed: {
       questions () {
