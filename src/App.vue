@@ -34,7 +34,9 @@
 .main-dark {
   background-color: rgb(20, 20, 20);
 }
-
+.container {
+  max-width: 1200px;
+}
 
 </style>
 <script>

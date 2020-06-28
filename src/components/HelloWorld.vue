@@ -1,6 +1,9 @@
 <template>
   <v-main>
-    <v-container :class="isdark ? 'container-dark': ''">
+    <v-container
+      :class="isdark ? 'container-dark': ''"
+      max-width="1200px"
+    >
         <h2
           :class="['mb-2', isdark ? 'white--text' : 'black--text']"
         >Frage: {{question_index + 1}}</h2>
@@ -31,6 +34,9 @@
 <style scoped>
 .container-dark {
   background-color: rgb(20, 20, 20);
+}
+.container {
+  max-width: 1200px;
 }
 </style>
 <script>
