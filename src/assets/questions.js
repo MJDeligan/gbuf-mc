@@ -1,4 +1,6 @@
-{"questions":[
+export default {
+  name: "questions",
+  "questions":[
     {"q":"Welche Aussagen zu Lean Production sind richtig? (2)",
     "answers":[
       {"text":"Eine schlanke Produktion besteht zu 100% aus wertschöpfenden Prozessen!", "id":1},
