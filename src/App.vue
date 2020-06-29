@@ -17,7 +17,7 @@
     
     </v-app-bar>
 
-    <v-main :class="isdark ? 'main-dark' : ''">
+    <v-main :class="[isdark ? 'main-dark' : '', $vuetify.breakpoint.name == 'xs' ? 'pt-2' : '']">
       <HelloWorld :isdark="isdark"/>
       <v-sheet :class="['justify-center d-flex mb-8', isdark? 'main-dark' : '']">
         <v-btn
@@ -51,6 +51,7 @@
           <v-list-item class="mb-2">The number next to the question indicates the number of correct answers</v-list-item>
           <v-list-item class="mb-2">Press the Validate-Button to check your answers</v-list-item>
           <v-list-item class="mb-2">Press the Next-Button for the next Question</v-list-item>
+          <v-list-item class="mb-2">Press the Previous-Button to go to the previous question</v-list-item>
           <v-list-item class="mb-2">Night mode can be toggled with the switch below the question container</v-list-item>
         </v-list>
       </v-card>

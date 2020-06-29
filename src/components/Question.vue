@@ -18,17 +18,29 @@
         <v-sheet
             class="d-flex pb-2 mr-2"
         >
-            <v-btn
-                class="ml-auto mr-2"
-                @click="validate"
-                color="success"
-            >
-                Validate
-            </v-btn>
-            <v-btn
-                @click="$emit('next'); reset()"
-                color="primary"
-            >Next</v-btn>
+            <div :class="$vuetify.breakpoint.name == 'xs' ? 'ma-auto' : 'ml-auto'">
+                <v-btn
+                    class="mr-2 white--text"
+                    :disabled="disablePrev"
+                    @click="$emit('previous')"
+                    color="red"
+                >
+                    Previous
+                </v-btn>
+                <v-btn
+                    class="mr-2"
+                    @click="validate"
+                    color="success"
+                >
+                    Validate
+                </v-btn>
+                <v-btn
+                    @click="$emit('next'); reset()"
+                    color="primary"
+                >
+                    Next
+                </v-btn>
+            </div>
         </v-sheet>
     </v-card>
 </template>
@@ -41,7 +53,7 @@
 <script>
 export default {
     name: "Question",
-    props: ['question','isdark'],
+    props: ['question','isdark','disablePrev'],
     data () {
         return {
             user_answers: [],

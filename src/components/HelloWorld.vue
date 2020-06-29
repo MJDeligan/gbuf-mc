@@ -10,6 +10,8 @@
         <Question
           v-if="question_index < questions.length"
           @next="question_index++"
+          @previous="question_index--"
+          :disablePrev="disablePrev"
           :question="currentQuestion"
           :isdark="isdark"
         >
@@ -59,10 +61,8 @@ import Question from './Question.vue'
       currentQuestion () {
         return this.questions[this.question_index]
       },
-    },
-    methods: {
-      q () {
-        console.log(questions)
+      disablePrev () {
+        return this.question_index == 0
       }
     }
   }
