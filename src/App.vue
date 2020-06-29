@@ -41,6 +41,7 @@
       >
       <v-card>
         <v-card-title class="mb-4">Welcome</v-card-title>
+        <v-card-text class="red--text">Answers might not be correct! This is not a substitute for actually studying for the test!</v-card-text>
         <v-card-text class="primary--text">If you find any errors let me know:</v-card-text>
         <v-card-text class="primary--text">
           <v-icon color="primary">mdi-email</v-icon>
