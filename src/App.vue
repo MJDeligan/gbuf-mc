@@ -8,7 +8,7 @@
       <v-container class="d-flex align-center">
         <v-toolbar-title>MC-Tester</v-toolbar-title>
         <v-spacer class="ml-auto"></v-spacer>
-        <span v-if="$vuetify.breakpoint.name != 'xs'" class="align-self-center">Credits to
+        <span v-if="$vuetify.breakpoint.name != 'xs'" class="align-self-center">Credit for questions to
           <a
             class="white--text"
           href="https://github.com/stiefel40k/PythonMCTester">stiefel40k and bgeVam</a>
@@ -54,7 +54,7 @@
         </v-list>
       </v-card>
       </v-dialog>
-      <span v-if="$vuetify.breakpoint.name == 'xs'" :class="['align-self-center ml-4', isdark ? 'white--text' : '']">Credits to
+      <span v-if="$vuetify.breakpoint.name == 'xs'" :class="['align-self-center ml-4', isdark ? 'white--text' : '']">Credit for questions to
           <a
             href="https://github.com/stiefel40k/PythonMCTester"
           >stiefel40k and bgeVam</a>
